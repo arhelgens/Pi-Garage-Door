@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="GarageDoorPi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GarageDoorPi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource AppBarButtonForeground}" RenderTransformOrigin="0.45,0.504">
+        <StackPanel HorizontalAlignment="Left" Height="576" Margin="60,54,0,0" VerticalAlignment="Top" Width="245">
+            <Ellipse x:Name="el_Car" Fill="Gray" Height="100" Margin="10" Width="100"/>
+            <TextBlock x:Name="tblk_Car" Text="Car Present" Margin="10,10,10,10" TextAlignment="Center" FontSize="24" Foreground="#FFF0EAEA" RenderTransformOrigin="0.508,-1.027"/>
+            <Ellipse x:Name="el_GarageDoor" Fill="Gray" Height="100" Margin="10" Width="100"/>
+            <TextBlock x:Name="tblk_GarageDoor" Text="Garage Door Closed" Margin="10,10,10,10" TextAlignment="Center" FontSize="24" Foreground="#FFF0EAEA" RenderTransformOrigin="0.508,-1.027"/>
+            <TextBlock x:Name="tblk_SignalReceived" Text="No Signal" Margin="10,5,10,10" TextAlignment="Center" Foreground="#FFF0EAEA" RenderTransformOrigin="0.508,-1.027"/>
+            <TextBlock x:Name="tblk_PhoneHome" Text="Not home" Margin="10,5,10,10" TextAlignment="Center" Foreground="#FFF0EAEA" RenderTransformOrigin="0.508,-1.027"/>
+        </StackPanel>
+    </Grid>
+</Page>
